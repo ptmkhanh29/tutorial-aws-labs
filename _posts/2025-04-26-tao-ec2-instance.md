@@ -3,14 +3,15 @@ title: "Khởi tạo EC2 và chạy web server cơ bản - Phần 1"
 date: 2025-04-26 11:33:00 +0700
 categories: [Cloud Computing, EC2]
 tags: [ec2, vpc, ssh]
-image: /assets/images/2025-04-30-tao-ec2-instance/23.png
-alt: "Image alt text"
+image: 
+  path: /assets/images/2025-04-30-tao-ec2-instance/01-lab-ec2.drawio.svg
+  alt: "Mô hình triển khai EC2 cơ bản trong Public Subnet"
 ---
 
 Mình sẽ thực hành bài lab trong quyển này ở trang 148 vì nó đáp ứng đầy đủ các mục tiêu khi làm quen với EC2.
 
 <p>
-    <a href="https://ptmkhanh29.github.io/aws-labs-tutorial/files/AWS-Certified-Solutions-Architect-Associate-EXAM-GUIDE-SAA-C01.pdf" 
+    <a href="https://ptmkhanh29.github.io/tutorial-aws-labs/assets/files/AWS-Certified-Solutions-Architect-Associate-EXAM-GUIDE-SAA-C01.pdf"  
        target="_blank"
        rel="noopener noreferrer">
        AWS Certified Solutions Architect Associate EXAM-GUIDE (Exam SAA-C01).pdf
@@ -19,11 +20,15 @@ Mình sẽ thực hành bài lab trong quyển này ở trang 148 vì nó đáp 
 
 ![Image1](assets/images/2025-04-30-tao-ec2-instance/description-lab.png)
 
-1. Thực hành tạo EC2 Instance trong public subnet, mở port SSH
+**🎯 Bạn sẽ đạt được gì sau bài lab này?**
 
-2. Hiểu mối quan hệ giữa VPC → Subnet (public) → EC2 → Security Group
-
-3. Kết nối đến EC2 instance thành công qua SSH bằng key pair
+- Hiểu được cách **tạo mới một EC2 Instance** trên AWS bằng giao diện Management Console.
+- Biết cách **chọn VPC, subnet, AMI, instance type** một cách hợp lý.
+- Biết cách **cấu hình firewall (Security Group)** để mở port SSH và HTTP phục vụ web server.
+- Biết cách **gắn Elastic IP** để giữ IP cố định cho EC2.
+- Thực hành **kết nối SSH vào EC2 instance** từ máy local.
+- Cài đặt và cấu hình **Apache hoặc Nginx** làm Web Server trên Amazon Linux.
+- Tạo và triển khai một **trang HTML đơn giản**, sau đó kiểm tra trên trình duyệt.
 
 **🌐 Mối liên hệ giữa EC2, Public Subnet, VPC và Region**
 

@@ -3,14 +3,15 @@ title: "Khởi tạo EC2 và chạy web server cơ bản - Phần 2"
 date: 2025-04-29 11:33:00 +0700
 categories: [Cloud Computing, EC2]
 tags: [ec2, vpc, ssh]
-image: /path/to/image
-alt: "Image alt text"
+image: 
+  path: /assets/images/2025-04-30-tao-ec2-instance-p2/01-lab-ec2.drawio.svg
+  alt: "Mô hình triển khai EC2 cơ bản trong Public Subnet"
 ---
 
 Mình sẽ thực hành bài lab trong quyển này ở trang 148 vì nó đáp ứng đầy đủ các mục tiêu khi làm quen với EC2.
 
 <p>
-    <a href="https://ptmkhanh29.github.io/aws-labs-tutorial/files/AWS-Certified-Solutions-Architect-Associate-EXAM-GUIDE-SAA-C01.pdf" 
+    <a href="https://ptmkhanh29.github.io/tutorial-aws-labs/assets/files/AWS-Certified-Solutions-Architect-Associate-EXAM-GUIDE-SAA-C01.pdf" 
        target="_blank"
        rel="noopener noreferrer">
        AWS Certified Solutions Architect Associate EXAM-GUIDE (Exam SAA-C01).pdf
@@ -201,3 +202,5 @@ Nếu hiện trang "Welcome" như đã tạo, thì bạn đã triển khai thàn
 - Đối với Nginx:
 
 ![Image](assets/images/2025-04-30-tao-ec2-instance-p2/16.png)
+
+
