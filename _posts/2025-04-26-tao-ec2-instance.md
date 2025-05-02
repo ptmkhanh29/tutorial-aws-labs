@@ -1,5 +1,6 @@
 ---
 title: "Khởi tạo EC2 và chạy web server cơ bản - Phần 1"
+comments: true
 date: 2025-04-26 11:33:00 +0700
 categories: [Cloud Computing, EC2]
 tags: [ec2, vpc, ssh]
