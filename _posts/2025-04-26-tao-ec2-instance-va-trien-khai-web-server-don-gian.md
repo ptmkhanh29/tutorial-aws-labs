@@ -2,7 +2,7 @@
 title: "Khởi tạo EC2 và chạy web server cơ bản - Phần 1"
 comments: true
 date: 2025-04-26 11:33:00 +0700
-categories: [Cloud Computing, EC2]
+categories: [Cloud Computing, Elastic Compute Cloud]
 tags: [ec2, vpc, ssh]
 image: 
   path: /assets/images/2025-04-30-tao-ec2-instance/01-lab-ec2.drawio.svg
@@ -21,7 +21,7 @@ Mình sẽ thực hành bài lab trong quyển này ở trang 148 vì nó đáp 
 
 ![Image1](assets/images/2025-04-30-tao-ec2-instance/description-lab.png)
 
-**🎯 Bạn sẽ đạt được gì sau bài lab này?**
+**🎯 Mục tiêu bài lab**
 
 - Hiểu được cách **tạo mới một EC2 Instance** trên AWS bằng giao diện Management Console.
 - Biết cách **chọn VPC, subnet, AMI, instance type** một cách hợp lý.
@@ -35,7 +35,15 @@ Mình sẽ thực hành bài lab trong quyển này ở trang 148 vì nó đáp 
 
 Region → Chứa nhiều VPC → VPC chứa nhiều Subnet (Public/Private) → Subnet chứa EC2 Instance
 
-![Image1](assets/images/2025-04-30-tao-ec2-instance/1.png)
+<div class="mermaid">
+flowchart LR
+    A(fa:fa-globe Region) --> B(fa:fa-network-wired VPC)
+    B --> C(fa:fa-cloud Public Subnet)
+    C --> D(fa:fa-shield-alt Security Group)
+    D --> E(fa:fa-server EC2 Instance)
+    B --> F(fa:fa-exchange-alt Internet Gateway)
+    F --> E
+</div>
 
 -----------------
 

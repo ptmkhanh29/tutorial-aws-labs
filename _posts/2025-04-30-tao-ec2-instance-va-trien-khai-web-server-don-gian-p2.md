@@ -2,8 +2,9 @@
 title: "Khởi tạo EC2 và chạy web server cơ bản - Phần 2"
 comments: true
 date: 2025-04-29 11:33:00 +0700
-categories: [Cloud Computing, EC2]
+categories: [Cloud Computing, Elastic Compute Cloud]
 tags: [ec2, vpc, ssh]
+mermaid: true
 image: 
   path: /assets/images/2025-04-30-tao-ec2-instance-p2/01-lab-ec2.drawio.svg
   alt: "Mô hình triển khai EC2 cơ bản trong Public Subnet"
@@ -21,11 +22,29 @@ Mình sẽ thực hành bài lab trong quyển này ở trang 148 vì nó đáp 
 
 ![Image1](assets/images/2025-04-30-tao-ec2-instance-p2/description-lab.png)
 
-1. Thực hành tạo EC2 Instance trong public subnet, mở port SSH
+**🎯 Mục tiêu bài lab**
 
-2. Hiểu mối quan hệ giữa VPC → Subnet (public) → EC2 → Security Group
+- Hiểu được cách **tạo mới một EC2 Instance** trên AWS bằng giao diện Management Console.
+- Biết cách **chọn VPC, subnet, AMI, instance type** một cách hợp lý.
+- Biết cách **cấu hình firewall (Security Group)** để mở port SSH và HTTP phục vụ web server.
+- Biết cách **gắn Elastic IP** để giữ IP cố định cho EC2.
+- Thực hành **kết nối SSH vào EC2 instance** từ máy local.
+- Cài đặt và cấu hình **Apache hoặc Nginx** làm Web Server trên Amazon Linux.
+- Tạo và triển khai một **trang HTML đơn giản**, sau đó kiểm tra trên trình duyệt.
 
-3. Kết nối đến EC2 instance thành công qua SSH bằng key pair
+**🌐 Mối liên hệ giữa EC2, Public Subnet, VPC và Region**
+
+Region → Chứa nhiều VPC → VPC chứa nhiều Subnet (Public/Private) → Subnet chứa EC2 Instance
+
+<div class="mermaid">
+flowchart LR
+    A(fa:fa-globe Region) --> B(fa:fa-network-wired VPC)
+    B --> C(fa:fa-cloud Public Subnet)
+    C --> D(fa:fa-shield-alt Security Group)
+    D --> E(fa:fa-server EC2 Instance)
+    B --> F(fa:fa-exchange-alt Internet Gateway)
+    F --> E
+</div>
 
 Sau khi tạo thành công EC2 instance, bước tiếp theo mình sẽ triển khai một Web Server để phục vụ trang web
 
