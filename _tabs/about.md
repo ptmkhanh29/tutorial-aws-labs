@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 5
 ---
 
 Hello, chào mừng các bạn đến với blog chinh phục chứng chỉ SAA-C03 này của mình 👇
