@@ -3,7 +3,7 @@ title: "Tạo EBS Instance và gáng nó cho EC2 Instance"
 comments: true
 date: 2025-05-03 20:33:00 +0700
 categories: [Storage, Elastic Block Store]
-tags: [ec2, ebs, ssh]
+tags: [EC2, EBS, SSH]
 image: 
   path: /assets/images/2025-04-30-tao-ec2-instance/01-lab-ec2.drawio.svg
   alt: "Mô hình triển khai EC2 cơ bản trong Public Subnet"

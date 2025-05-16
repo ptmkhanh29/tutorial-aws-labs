@@ -3,7 +3,8 @@ title: "Khởi tạo EC2 và chạy web server cơ bản - Phần 1"
 comments: true
 date: 2025-04-26 11:33:00 +0700
 categories: [Cloud Computing, Elastic Compute Cloud]
-tags: [ec2, vpc, ssh]
+tags: [EC2, VPC, SSH]
+mermaid: true
 image: 
   path: /assets/images/2025-04-30-tao-ec2-instance/01-lab-ec2.drawio.svg
   alt: "Mô hình triển khai EC2 cơ bản trong Public Subnet"
