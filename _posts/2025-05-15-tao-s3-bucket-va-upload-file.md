@@ -2,15 +2,15 @@
 title: Tạo S3 Bucket và Public File sử dụng Access Control List
 date: 2025-05-15
 categories: [Storage, Simple Storage Service]
-tags: [S3, ACL]
+tags: [s3, acl]
 ---
 
-## Mục tiêu
+## 🎯 Mục tiêu
 - Tạo một S3 Bucket.
 - Upload file lên bucket.
 - Thiết lập quyền public cho file thông qua Object **ACL (Access Control List)**, để file có thể truy cập công khai qua internet
 
-## Các bước thực hiện
+## 🛠️ Các bước thực hiện
 
 ### Bước 1: Truy cập AWS S3 Console
 
@@ -121,11 +121,11 @@ Copy URL và mở trên trình duyệt. Nếu bạn thấy file hiện lên tứ
 
 ---
 
-## Kết luận
+## ✅Kết luận
 
-Dùng ACL để public file rất nhanh và dễ thao tác — chỉ vài cú click là xong. Nhưng khi số lượng file nhiều, việc phải chỉnh từng file thủ công sẽ rất mất thời gian. Ngoài ra, ACL không phải cách quản lý permission tốt nhất — ACL đơn giản nhưng kém hiệu quả khi muốn kiểm soát bảo mật cho cả bucket hay nhiều người dùng khác nhau upload vào bucket đó.
+Dùng ACL để public file rất nhanh và dễ thao tác. Nhưng khi số lượng file nhiều, việc phải chỉnh từng file thủ công sẽ rất mất thời gian. Ngoài ra, ACL không phải cách quản lý permission tốt nhất — ACL đơn giản nhưng kém hiệu quả khi muốn kiểm soát bảo mật cho cả bucket hay nhiều người dùng khác nhau muốn upload object vào bucket đó.
 
-### Tóm lại:
+**Tóm lại:**
 - ACL chỉ hợp khi bạn cần demo để biết cách tạo và sử dụng S3 Bucket.
 
 - Với dự án thật → nên dùng Bucket Policies hoặc IAM Policies để quản lý quyền tốt hơn.

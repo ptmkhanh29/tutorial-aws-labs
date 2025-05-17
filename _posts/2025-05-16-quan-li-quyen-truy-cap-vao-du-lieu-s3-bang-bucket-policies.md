@@ -1,17 +1,17 @@
 ---
-title: Quản lý quyền truy cập bằng Bucket Policy
+title: Quản lý quyền truy cập vào dữ liệu S3 bằng Bucket Policy
 date: 2025-05-16
 categories: [Storage, Simple Storage Service]
-tags: [S3, Bucket Policies]
+tags: [s3, bucket policy]
 mermaid: true
 ---
 
-## Mục tiêu
+## 🎯 Mục tiêu
 Hướng dẫn cách sử dụng **Bucket Policy** để cấp quyền public file trên S3, thay vì dùng ACL, giúp quản lý tập trung và bảo mật hơn.
 
 -------------------
 
-## Tài nguyên hiện có
+## 📚 Tài nguyên hiện có
 
 - Bucket: **lab03-s3-ptmkhanh29**, mình đã tạo bucket này ở bài lab trước đó <a href="https://ptmkhanh29.github.io/tutorial-aws-labs/posts/tao-s3-bucket-va-upload-file" target="_blank" rel="noopener noreferrer">Tạo S3 Bucket và Public File sử dụng Access Control List</a>
 
@@ -26,8 +26,7 @@ Hướng dẫn cách sử dụng **Bucket Policy** để cấp quyền public fi
 > - **Best Practice:** luôn ưu tiên Bucket Policy để kiểm soát quyền truy cập S3.
 {: .prompt-warning }
 
-
-## Các bước thực hiện
+## 🛠️ Các bước thực hiện
 
 ### 1. Tạo folder mới
 
@@ -145,3 +144,15 @@ Mình click vào `Object URL` thì có thể download được file `aws-s3.md` 
 ![Image1](assets/images/2025-05-16-quan-li-quyen-truy-cap-bang-bucket-policies/13.png)
 
 Vậy là chúng ta đã thành công cấp quyền truy cập cho Bucket thông qua Bucket Policies
+
+## ✅ Kết luận
+
+Vậy là mình đã hoàn thành xong bài lab để hiểu cách cấu hình quản lý quyền truy cập cho dữ liệu của S3 bằng Bucket Policy. Thay vì phải cấu hình tay cho từng file với ACL như ở bài lab trước, giờ chúng ta chỉ cần 1 đoạn policy đã cấp được quyền cho cả thư mục.
+
+👉 Bài lab tiếp theo trong series S3 mình sẽ cố gắng phát triển các phần nâng cao hơn như:
+
+- Static Website Hosting trên S3
+
+- Kết hợp CloudFront + SSL
+
+- Lifecycle Rules để tiết kiệm chi phí

@@ -3,7 +3,7 @@ title: "Khởi tạo EC2 và chạy web server cơ bản - Phần 2"
 comments: true
 date: 2025-04-29 11:33:00 +0700
 categories: [Cloud Computing, Elastic Compute Cloud]
-tags: [EC2, VPC, SSH]
+tags: [ec2, vpc]
 mermaid: true
 image: 
   path: /assets/images/2025-04-30-tao-ec2-instance-p2/01-lab-ec2.drawio.svg
