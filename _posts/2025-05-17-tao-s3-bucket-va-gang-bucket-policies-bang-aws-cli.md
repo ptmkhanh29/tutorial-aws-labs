@@ -11,6 +11,8 @@ Tiếp nối 2 bài lab tạo S3 Bucket và cấp quyền quản lý dùng ACL v
 
 Hướng dẫn cách **tạo S3 bucket** và **gán bucket policy public read** bằng **AWS CLI**, sử dụng **Access Key & Secret Key** từ máy cá nhân.
 
+Bên cạnh đó, bài lab giúp **hiểu rõ cơ chế Block Public Access của S3**, vì đây là thứ sẽ "Deny" các policy public nếu không cấu hình đúng.
+
 ---
 
 ## 🛠️ Các bước thực hiện
@@ -250,7 +252,7 @@ aws s3 cp ~/aws/resources/04-lab-s3/image_test.png s3://lab-04-s3-ptmkhanh29/pub
 
 Kiểm tra truy cập file qua url trả về
 
-[https://lab-04-s3-ptmkhanh29.s3.ap-southeast-1.amazonaws.com/public-files/image_test.png](https://lab-04-s3-ptmkhanh29.s3.ap-southeast-1.amazonaws.com/public-files/image_test.png)
+`https://lab-04-s3-ptmkhanh29.s3.ap-southeast-1.amazonaws.com/public-files/image_test.png`
 
 Bạn sẽ thấy file hiện ra nghĩa là Bucket Policy đang thực hiện đúng yêu cầu public toàn bộ file có prefix `public-files` ra internet
 
