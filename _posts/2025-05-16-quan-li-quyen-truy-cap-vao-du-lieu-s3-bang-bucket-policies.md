@@ -4,6 +4,7 @@ date: 2025-05-16
 categories: [Storage, Simple Storage Service]
 tags: [s3, bucket policy]
 mermaid: true
+comments: true
 ---
 
 ## 🎯 Mục tiêu

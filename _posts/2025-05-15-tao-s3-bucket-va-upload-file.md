@@ -3,6 +3,7 @@ title: Tạo S3 Bucket và Public File sử dụng Access Control List
 date: 2025-05-15
 categories: [Storage, Simple Storage Service]
 tags: [s3, acl]
+comments: true
 ---
 
 ## 🎯 Mục tiêu

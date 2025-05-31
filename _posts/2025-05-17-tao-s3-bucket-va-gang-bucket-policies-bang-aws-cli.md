@@ -3,6 +3,7 @@ title: "Tạo S3 Bucket & Gán Bucket Policy với AWS CLI"
 date: 2025-05-17
 categories: [Storage, Simple Storage Service]
 tags: [aws cli, s3, bucket policy]
+comments: true
 ---
 
 Tiếp nối 2 bài lab tạo S3 Bucket và cấp quyền quản lý dùng ACL với Bucket Policy bằng AWS Console. Ở bài viết này mình sẽ dùng AWS CLI để tối ưu hóa công việc.
